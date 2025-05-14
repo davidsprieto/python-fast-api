@@ -1,0 +1,22 @@
+[tool.ruff]
+# Set line length to 88 (you can customize it)
+line-length = 88
+
+# Specify which types of issues Ruff should select. You can select errors (E), warnings (W), and others.
+select = ["E", "F", "W"]
+
+# Ignoring specific error codes (you can adjust as needed)
+ignore = ["E203", "W503"]
+
+# Automatically fix issues when running ruff with `--fix` (similar to source.fixAll in VSCode)
+fix = true
+
+# Control whether Ruff checks docstrings in your code
+docstrings = true
+
+# Optional: To ignore some rules or extend the ignore list
+extend-ignore = ["E501"]  # Ignore line length errors (for example)
+
+# Enable or disable specific rules (Ruff has many built-in rules)
+# For instance, you can disable a rule that enforces a docstring convention
+# disable = ["D100"]
